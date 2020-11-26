@@ -7,8 +7,7 @@ public class Point1 {
         double three = Math.pow(first, 2);
         double four = Math.pow(second, 2);
         double five = three + four;
-        double six = Math.sqrt(five);
-        double rls = six;
+        double rls = Math.sqrt(five);
         return rls;
     }
 
