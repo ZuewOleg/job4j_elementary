@@ -11,7 +11,7 @@ public class SqAreaTest {
     int expected = 0;
     int p = 3;
     int k = 6;
-    double out = SqArea.square(p,k);
+    double out = SqArea.square(p, k);
     Assert.assertEquals(expected, out, 0.01);
     }
 
