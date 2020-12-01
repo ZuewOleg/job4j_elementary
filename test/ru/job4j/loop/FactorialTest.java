@@ -16,9 +16,9 @@ public class FactorialTest {
     }
 
     @Test
-    public void whenCalculateFactorialForEightThenFortyThousandThreeHundredAndTwenty() {
-        int rsl = Factorial.calc(8);
-        int expected = 40320;
+    public void whenCalculateFactorialForZeroThenOne() {
+        int rsl = Factorial.calc(0);
+        int expected = 1;
         assertThat(rsl, Matchers.is(expected));
     }
 }
