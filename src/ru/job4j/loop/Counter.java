@@ -14,4 +14,5 @@ public class Counter {
         System.out.println(sum(1, 12));
         System.out.println(sum(0, 3));
     }
+
 }
