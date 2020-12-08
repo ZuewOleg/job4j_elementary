@@ -8,7 +8,6 @@ public class ArrayChar {
                 if (pref[i++] != word[j]) {
                     result = false;
                 }
-
             }
         }
         return result;
