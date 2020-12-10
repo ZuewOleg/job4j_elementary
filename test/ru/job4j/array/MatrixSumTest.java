@@ -33,9 +33,8 @@ public class MatrixSumTest {
         int[][] in = {
                 {1, 2, 1},
                 {1, 2, 0},
-                {2, 0, 1}
         };
-        int expect = 10;
+        int expect = 7;
         int rsl = MatrixSum.sum(in);
         assertThat(rsl, is(expect));
     }
