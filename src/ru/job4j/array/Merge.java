@@ -1,29 +1,18 @@
 package ru.job4j.array;
 
 public class Merge {
-    public static int[] merge(int[] left, int[] right) {
+    public static int[] merge(int[] left, int[] right) { /* массивы уже отсортированы по возрасстанию */
         int[] rsl = new int[left.length + right.length];
-        int i = 0, j = 0, r = 0; /* счетчики */
-        while (i < left.length && j < right.length) {
-            if (left[i] <= right[j]) {
-                rsl[r] = left[i];
-                i++;
+        int leftPoint = 0, rightPoint = 0, rslPoint = 0; /* счетчики */
+        while (leftPoint + rightPoint != rsl.length) {
+            if (leftPoint != left.length && rightPoint != right.length) {
+                rsl[rslPoint++] = left[leftPoint] < right[rightPoint] ? left[leftPoint++] : right[rightPoint++]; /* тернарное условие */
+            } else if (leftPoint != left.length) {
+                rsl[rslPoint++] = left[leftPoint++];
             } else {
-                rsl[r] = right[j];
-                j++;
+                rsl[rslPoint++] = right[rightPoint++];
             }
-            r++;
-            }
-        while (i < left.length) {
-            rsl[r] = left[i];
-            i++;
-            r++;
         }
-        while (j < right.length) {
-            rsl[r] = right[j];
-            j++;
-            r++;
-        }
-            return rsl;
-        }
+        return rsl;
+    }
 }
