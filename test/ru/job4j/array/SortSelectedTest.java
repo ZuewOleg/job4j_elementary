@@ -14,7 +14,7 @@ public class SortSelectedTest {
     }
 
     @Test
-    public void whenSort2() {
+    public void whenSort2Second() {
         int[] input = new int[] {2, 4, 1, 3, 5};
         int[] result = SortSelected.sort(input);
         int[] expect = new int[] {1, 2, 3, 4, 5};
@@ -22,7 +22,7 @@ public class SortSelectedTest {
     }
 
     @Test
-    public void whenSort3() {
+    public void whenSortThird() {
         int[] input = new int[] {2, 1, 3};
         int[] result = SortSelected.sort(input);
         int[] expect = new int[] {1, 2, 3};
@@ -30,7 +30,7 @@ public class SortSelectedTest {
     }
 
     @Test
-    public void whenSort4() {
+    public void whenSortFourth() {
         int[] input = new int[] {3, 1, 2, 4};
         int[] result = SortSelected.sort(input);
         int[] expect = new int[] {1, 2, 3, 4};

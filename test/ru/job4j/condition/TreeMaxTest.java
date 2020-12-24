@@ -20,7 +20,7 @@ public class TreeMaxTest {
 
         @Test
         public void thirdMax() {
-            int rsl = TreeMax.max(1, 5, 100) ;
+            int rsl = TreeMax.max(1, 5, 100);
             assertThat(rsl, is(100));
         }
 

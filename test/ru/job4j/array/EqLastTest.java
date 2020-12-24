@@ -23,7 +23,7 @@ public class EqLastTest {
     }
 
     @Test
-    public void whenNotEq2() {
+    public void whenNotEqSecond() {
         int[] left = {3, 7, 9};
         int[] right = {3, 9, 7};
         assertThat(check(left, right), is(false));

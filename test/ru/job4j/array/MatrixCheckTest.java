@@ -7,7 +7,7 @@ import static org.junit.Assert.assertThat;
 public class MatrixCheckTest {
 
     @Test
-    public void whenHasMonoHorizontal() {
+    public void whenHasMonoHorizontalTrue() {
         char[][] input = {
                 {' ', ' ', ' '},
                 {'X', 'X', 'X'},
@@ -18,7 +18,7 @@ public class MatrixCheckTest {
     }
 
     @Test
-    public void whenHasMonoHorizontal2() {
+    public void whenHasMonoHorizontalFalse() {
         char[][] input = {
                 {' ', ' ', ' '},
                 {'X', ' ', 'X'},
@@ -29,7 +29,7 @@ public class MatrixCheckTest {
     }
 
     @Test
-    public void whenHasMonoHorizontal3() {
+    public void whenHasMonoHorizontalFalseToo() {
         char[][] input = {
                 {' ', ' ', ' '},
                 {'X', ' ', 'X'},
@@ -40,7 +40,7 @@ public class MatrixCheckTest {
     }
 
     @Test
-    public void whenHasMonoVertical() {
+    public void whenHasMonoVerticalTrue() {
         char[][] input = {
                 {' ', ' ', 'X'},
                 {' ', ' ', 'X'},
@@ -51,7 +51,7 @@ public class MatrixCheckTest {
     }
 
     @Test
-    public void whenHasMonoVertical1() {
+    public void whenHasMonoVerticalFalse() {
         char[][] input = {
                 {' ', ' ', ' '},
                 {' ', 'X', ' '},
@@ -62,7 +62,7 @@ public class MatrixCheckTest {
     }
 
     @Test
-    public void whenHasMonoVertical0() {
+    public void whenHasMonoVerticalFalseAgain() {
         char[][] input = {
                 {' ', ' ', 'X'},
                 {' ', 'X', ' '},
@@ -73,7 +73,7 @@ public class MatrixCheckTest {
     }
 
     @Test
-    public void whenDiagonal() {
+    public void whenDiagonalTrue() {
         char[][] input = {
                 {'X', ' ', ' '},
                 {' ', 'X', ' '},
