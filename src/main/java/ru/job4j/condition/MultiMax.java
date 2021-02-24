@@ -6,6 +6,7 @@ public class MultiMax {
         int result = a > third ? a : third;
         return result;
     }
+
     public static void main(String[] args) {
         int result = MultiMax.max(-4, -6, 0);
         System.out.println(result);

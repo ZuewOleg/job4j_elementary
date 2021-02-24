@@ -11,8 +11,9 @@ public class Game2 {
         }
         return result;
     }
+
     public static void main(String[] args) {
         double result = Game2.checkGame(0.9, 1, 2);
         System.out.println(result);
-        }
+    }
 }
